@@ -6,6 +6,7 @@
     --background-color-dark: #2F303A;
     --primary-font: 'Raleway', sans-serif;
     --secondary-font: 'Roboto', sans-serif;
+    --transition-duration-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* WholePage */
@@ -137,6 +138,7 @@ body{
         text-decoration: none;
         list-style: none;
         color: var(--color-for-body);
+        transition: color var(--transition-duration-and-func);
 }
 .nav:hover,
 .nav:focus{color: var(--accent-color);}
@@ -152,6 +154,7 @@ body{
         color: #757575;
         text-decoration: none;
         list-style: none;
+        transition: var(--transition-duration-and-func);
 }
 .contacts-header:hover,
 .contacts-header:focus{
@@ -393,6 +396,7 @@ padding-bottom: 30px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    transition: var(--transition-duration-and-func);
 }
 .social-list-link:hover,
 .social-list-link:focus{
@@ -424,6 +428,7 @@ padding-bottom: 30px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: currentColor;
+    transition: var(--transition-duration-and-func);
 }
 .client-link:hover,
 .client-link:focus{
@@ -512,6 +517,7 @@ footer{
         padding-right: 22px;
         border: none;
         border-radius: 4px;
+        transition: var(--transition-duration-and-func);
 }
 
 .button-filter:hover,
@@ -588,4 +594,46 @@ margin-right: 10px;
     width: 10px;
     height: 16px;
     margin-right: 10px;
+}
+
+/* Window  */
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+
+.modal-close-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.modal-close-btn-icon{
+width: 18px;
+height: 18px;
+    color: #000000;
 }
