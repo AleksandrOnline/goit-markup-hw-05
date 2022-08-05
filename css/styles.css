@@ -476,6 +476,7 @@ padding-bottom: 30px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: currentColor;
+    transition: var(--transition-duration-and-func);
 }
 .client-link:hover,
 .client-link:focus{
