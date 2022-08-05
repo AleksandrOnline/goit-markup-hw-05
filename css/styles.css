@@ -467,7 +467,7 @@ padding-bottom: 30px;
     justify-content: center;
     gap: 30px;
 }
-.client-link{
+.client-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -476,7 +476,6 @@ padding-bottom: 30px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: currentColor;
-    transition: var(--transition-duration-and-func);
 }
 .client-link:hover,
 .client-link:focus{
@@ -490,6 +489,7 @@ padding-bottom: 30px;
     fill: #AFB1B8;
     width: 170px;
     height: 92px;
+    transition: var(--transition-duration-and-func);
 }
 /* Footer */
 footer{
