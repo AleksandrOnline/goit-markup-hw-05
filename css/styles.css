@@ -704,12 +704,11 @@ height: 18px;
 
 /* Portfolio */
 .overlay{
-    font-family: var(--secondary-font);
-    background: rgba(33, 150, 243, 0.9);
-    font-style: normal;
+font-family: var(--secondary-font);
+background: rgba(33, 150, 243, 0.9);
 font-weight: 400;
 font-size: 18px;
-line-height: 28px;
+line-height: 1.6;
 letter-spacing: 0.03em;
 color: #FFFFFF;
 padding-top: 63px;
